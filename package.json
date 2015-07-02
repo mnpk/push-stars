@@ -1,0 +1,31 @@
+{
+  "name": "push-github-stars",
+  "version": "0.1.0",
+  "description": "Push notification for github stars",
+  "main": "ghstars.js",
+   "bin": {
+	  "ghstars": "nohup node ghstars.js >> push-github-stars.log &"
+  },
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mnpk/push-github-stars.git"
+  },
+  "keywords": [
+    "github",
+    "star",
+    "notifier",
+    "pushbullet"
+  ],
+  "author": "mnpk <mnncat@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnpk/push-github-stars/issues"
+  },
+  "homepage": "https://github.com/mnpk/push-github-stars",
+  "dependencies": {
+    "pushbullet": "^1.4.3"
+  }
+}
