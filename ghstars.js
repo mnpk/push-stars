@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var https = require('https')
 var url = require('url')
 var PushBullet = require('pushbullet')
@@ -5,7 +7,7 @@ var pusher = new PushBullet(process.env.PUSHBULLET_APIKEY)
 var util = require('util')
 
 var get_repos = function(host, path, r, done) {
-  console.log('getting repos... path:', path)
+  console.log('getting...', path)
   var options = {
     method: 'GET',
     host: host,
@@ -47,7 +49,7 @@ var path = '/users/%/repos'.replace('%', username)
 var last = {}
 
 var fetch = function() {
-  console.log(new Date().toLocaleString(), 'fetcing...')
+  console.log(new Date().toLocaleString(), 'fetching...')
   var r = {
     total_count: 0,
   }
