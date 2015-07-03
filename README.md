@@ -2,9 +2,11 @@
 
 :octocat: :star: Get Push Notification for your github repo stars.
 
-[![npm](https://img.shields.io/npm/v/push-stars.svg?style=flat-square)](https://www.npmjs.com/package/push-stars)
-
 *\- When someone stared at your repo, this tool will send a [Pushbullet](https://www.pushbullet.com/) notification.*
+
+![screenshot](http://i.imgur.com/qnJqfAR.png)
+
+[![npm](https://img.shields.io/npm/v/push-stars.svg?style=flat-square)](https://www.npmjs.com/package/push-stars)
 
 ## Install
 ```
