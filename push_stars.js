@@ -43,7 +43,7 @@ var get_repos = function(host, path, r, done) {
   })
 }
 
-var username = 'mnpk'
+var username = process.env.GITHUB_NAME
 var host = 'api.github.com'
 var path = '/users/%/repos'.replace('%', username)
 var last = {}
