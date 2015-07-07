@@ -9,7 +9,6 @@ var util = require('util')
 var get_repos = function(host, path, r, done) {
   console.log('getting...', path)
   var options = {
-    method: 'GET',
     host: host,
     path: path,
     headers: {'User-Agent': 'github-stars'}
@@ -40,6 +39,8 @@ var get_repos = function(host, path, r, done) {
     res.on('error', function(err) {
       console.log(err)
     })
+  }).on('error', function(err) {
+    console.log(err);
   })
 }
 
